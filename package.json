@@ -1,0 +1,19 @@
+{
+  "name": "loglinecolor",
+  "version": "0.1.0",
+  "description": "console.log with color",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "homepage": "https://github.com/vixerys/loglinecolor",
+  "author": "vixerys",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vixerys/loglinecolor.git"
+  },
+  "dependencies": {
+    "eslint": "^8.31.0"
+  }
+}
