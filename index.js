@@ -5,7 +5,7 @@ class loglinecolor {
      * black color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     black(params) {
         return console.log("\x1b[30m" + params + "\x1b[0m");
@@ -15,7 +15,7 @@ class loglinecolor {
      * red color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     red(params) {
         return console.log("\x1b[31m" + params + "\x1b[0m");
@@ -45,7 +45,7 @@ class loglinecolor {
      * blue color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     blue(params) {
         return console.log("\x1b[34m" + params + "\x1b[0m");
@@ -55,7 +55,7 @@ class loglinecolor {
      * magenta color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     magenta(params) {
         return console.log("\x1b[35m" + params + "\x1b[0m");
@@ -65,7 +65,7 @@ class loglinecolor {
      * cyan color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     cyan(params) {
         return console.log("\x1b[36m" + params + "\x1b[0m");
@@ -75,7 +75,7 @@ class loglinecolor {
      * white color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     white(params) {
         return console.log("\x1b[37m" + params + "\x1b[0m");
@@ -85,10 +85,50 @@ class loglinecolor {
      * gray color
      * 
      * @param {string} params 
-     * @returns {string}
+     * @returns {void}
      */
     gray(params) {
         return console.log("\x1b[90m" + params + "\x1b[0m");
+    }
+
+    /**
+     * Highlight font
+     * 
+     * @param {string} params 
+     * @returns {void}
+     */
+    highlight(params) {
+        return console.log("\x1b[7m" + params + "\x1b[0m");
+    }
+
+    /**
+     * Dark font
+     * 
+     * @param {string} params 
+     * @returns {void}
+     */
+    dark(params) {
+        return console.log("\x1b[2m" + params + "\x1b[0m");
+    }
+
+    /**
+     * Bold font
+     * 
+     * @param {string} params 
+     * @returns {void}
+     */
+    bold(params) {
+        return console.log("\x1b[1m" + params + "\x1b[0m");
+    }
+
+    /**
+     * Underline font
+     * 
+     * @param {string} params 
+     * @returns {void}
+     */
+    underline(params) {
+        return console.log("\x1b[4m" + params + "\x1b[0m");
     }
 }
 
